@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>SIT-Minecraft 六角恐龙社 · 上海应用技术大学 Minecraft 社</title>
+<meta name="description" content="上海应用技术大学六角恐龙 Minecraft 社（SIT-Minecraft）官方介绍页。用方块筑梦，用创造改变世界——像素上应复原工程、生存世界社区、六角恐龙云与社团服务矩阵。" />
+<meta name="theme-color" content="#e8e5e1" />
+<link rel="icon" href="assets/img/logo.png" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════ BOOT / 接入序列 ══════════════════ -->
+<div class="boot" id="boot" aria-hidden="true">
+  <div class="boot__grid" aria-hidden="true"></div>
+  <div class="boot__scan" aria-hidden="true"></div>
+
+  <div class="boot__stage">
+    <div class="boot__mark" aria-hidden="true">
+      <img src="assets/img/logo.png" alt="" width="120" height="120" />
+      <span class="boot__ring"></span>
+      <span class="boot__ring boot__ring--slow"></span>
+    </div>
+
+    <div class="boot__brand">
+      <div class="boot__brand-line">SIT-MINECRAFT</div>
+      <div class="boot__brand-sub">上海应用技术大学六角恐龙社</div>
+    </div>
+
+    <div class="boot__lines">
+      <p data-boot-line><i>›</i> INITIALIZING ARCHIVE INTERFACE<span class="dots"></span></p>
+      <p data-boot-line><i>›</i> ID CONFIRMED : SIT-MINECRAFT<span class="dots"></span></p>
+      <p data-boot-line><i>›</i> LINK ESTABLISHED : sitmc.club<span class="dots"></span></p>
+      <p data-boot-line><i>›</i> ACCESS GRANTED<span class="dots"></span></p>
+    </div>
+
+    <div class="boot__bar"><span id="bootBar"></span></div>
+    <div class="boot__pct" id="bootPct">000 %</div>
+  </div>
+
+  <button class="boot__skip" id="bootSkip" type="button">跳过接入 / SKIP</button>
+</div>
+
+<!-- ══════════════════ HEADER ══════════════════ -->
+<header class="topbar" id="topbar">
+  <div class="topbar__ticker">
+    <span class="live-dot" aria-hidden="true"></span>
+    <span>档案终端在线</span>
+    <span class="sep">/</span>
+    <span class="hide-sm">ARCHIVE TERMINAL ONLINE</span>
+    <span class="sep hide-sm">/</span>
+    <span class="hide-sm">像素上应一期进度 <b>40%</b></span>
+    <span class="sep hide-sm">/</span>
+    <span class="hide-sm">组织玩家 <b>近千人</b></span>
+  </div>
+  <div class="topbar__util">
+    <span class="clock" id="clock">--:--:--</span>
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="切换明暗配色" title="切换明暗配色">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6L17 7M7 17l-1.4 1.4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+    </button>
+  </div>
+</header>
+
+<header class="sitehead">
+  <a class="brand" href="#top" aria-label="回到顶部">
+    <img class="brand__logo" src="assets/img/logo.png" alt="SIT-Minecraft 社团徽标" width="52" height="52" />
+    <span class="brand__text">
+      <span class="brand__cn">六角恐龙社</span>
+      <span class="brand__en">SIT-MINECRAFT</span>
+    </span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="主导航">
+    <a href="#about">社团简介</a>
+    <a href="#projects">社团项目</a>
+    <a href="#pixelsit">像素上应</a>
+    <a href="#departments">组织架构</a>
+    <a href="#courses">社课体系</a>
+    <a href="#faq">常见问题</a>
+    <a href="#join">加入我们</a>
+  </nav>
+
+  <div class="sitehead__act">
+    <a class="btn btn--solid" href="#join">加入交流群</a>
+    <button class="burger" id="burger" type="button" aria-label="展开导航" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-drawer" id="navDrawer" hidden>
+  <a href="#about">01 · 社团简介</a>
+  <a href="#projects">02 · 社团项目</a>
+  <a href="#pixelsit">03 · 像素上应</a>
+  <a href="#departments">04 · 组织架构</a>
+  <a href="#courses">05 · 社课体系</a>
+  <a href="#faq">06 · 常见问题</a>
+  <a href="#join">07 · 加入我们</a>
+</div>
+
+<main id="top">
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <img src="assets/img/campus-1.png" alt="" />
+    <span class="hero__veil"></span>
+    <span class="hero__grid"></span>
+  </div>
+
+  <div class="wrap hero__wrap">
+    <div class="hero__col">
+      <div class="kicker" data-reveal>
+        <span class="kicker__tag">档案 000</span>
+        <span class="kicker__line"></span>
+        <span class="kicker__txt">EST. 2025.03.13 / 智能技术学部</span>
+      </div>
+
+      <h1 class="hero__title" data-reveal>
+        <span class="hero__title-l1">用方块筑梦</span>
+        <span class="hero__title-l2">用创造改变世界</span>
+      </h1>
+
+      <p class="hero__lede" data-reveal>
+        上海应用技术大学六角恐龙 Minecraft 社 —— 以友好交流、合作游玩为初衷的学科型社团。
+        我们复原校园、搭建家园、维护服务，为校内每一位 Minecraft 爱好者提供活动平台。
+      </p>
+
+      <div class="hero__cta" data-reveal>
+        <a class="btn btn--solid btn--lg" href="#join">
+          加入我们
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h12M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost btn--lg" href="https://map.sitmc.club" target="_blank" rel="noopener">访问像素上应地图</a>
+      </div>
+
+      <dl class="stats" data-reveal>
+        <div class="stat"><dt>成立日期</dt><dd><b>2025</b>.03.13</dd></div>
+        <div class="stat"><dt>组织玩家</dt><dd><b>1000</b>+</dd></div>
+        <div class="stat"><dt>一期进度</dt><dd><b>40</b>%</dd></div>
+        <div class="stat"><dt>B站获赞</dt><dd><b>8.1</b>万</dd></div>
+      </dl>
+    </div>
+
+    <aside class="hero__panel" data-reveal>
+      <div class="panel__head">
+        <span class="panel__id">SIT-MC / 00</span>
+        <span class="panel__status"><i></i>ONLINE</span>
+      </div>
+      <div class="panel__media">
+        <img src="assets/img/campus-1.png" alt="像素上应复原工程 · 校园湖畔全景" />
+      </div>
+      <div class="panel__meta">
+        <div class="meta__row"><span>项目</span><b>像素上应 · 第一期</b></div>
+        <div class="meta__row"><span>范围</span><b>奉贤校区复原计划</b></div>
+        <div class="meta__row"><span>起始</span><b>2023.09.05</b></div>
+        <div class="meta__row"><span>状态</span><b class="is-accent">进行中</b></div>
+      </div>
+      <div class="panel__foot">
+        <a href="#pixelsit">查看项目档案 →</a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true"><span></span>SCROLL</div>
+</section>
+
+<!-- ══════════════════ 01 社团简介 ══════════════════ -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <span class="sec__no">01</span>
+      <div>
+        <h2 class="sec__title">社团简介<span>CLUB INTRODUCTION</span></h2>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about__body" data-reveal>
+        <p class="lead">
+          我们是<strong>上海应用技术大学六角恐龙 Minecraft 社（SIT-Minecraft）</strong>，正式成立于
+          <strong>2025 年 3 月 13 日</strong>，是隶属于<strong>智能技术学部</strong>的学科型社团。
+        </p>
+        <p>
+          社团以友好交流、合作游玩为初衷，致力于为校内所有 Minecraft 爱好者提供活动平台，目前组织玩家近千人。
+          2024 年 8 月末，我们的项目《像素上应》受邀参加了央视网《我的大学》视频项目，被校学生工作部官号「上应微学工」报道。
+        </p>
+        <p>
+          我们相信方块不只是方块。它是可以复刻一栋教学楼的尺度，是可以承载一届届上应人记忆的容器，
+          也是一群陌生人变成同伴的地方。
+        </p>
+
+        <div class="quote">
+          <span class="quote__mk">校训</span>
+          <p>明德 · 明学 · 明事</p>
+        </div>
+      </div>
+
+      <div class="about__side" data-reveal>
+        <figure class="fig">
+          <img src="assets/img/campus-cctv.jpg" alt="央视网《我的大学》视频项目中的像素上应画面" />
+          <figcaption>
+            <span class="fig__tag">媒体报道</span>
+            央视网《我的大学》· 像素上应复原工程
+          </figcaption>
+        </figure>
+        <figure class="fig">
+          <img src="assets/img/photo-class.jpg" alt="社团线下社课现场" />
+          <figcaption>
+            <span class="fig__tag">线下社课</span>
+            面向全校开放的公开社课现场
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="facts" data-reveal>
+      <div class="fact">
+        <span class="fact__k">隶属单位</span>
+        <span class="fact__v">智能技术学部</span>
+      </div>
+      <div class="fact">
+        <span class="fact__k">社团类型</span>
+        <span class="fact__v">学科型社团</span>
+      </div>
+      <div class="fact">
+        <span class="fact__k">服务对象</span>
+        <span class="fact__v">全校 Minecraft 爱好者</span>
+      </div>
+      <div class="fact">
+        <span class="fact__k">开放程度</span>
+        <span class="fact__v">服务器面向所有人开放</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 02 社团项目 ══════════════════ -->
+<section class="sec sec--alt" id="projects">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <span class="sec__no">02</span>
+      <div>
+        <h2 class="sec__title">社团项目<span>CLUB PROJECTS</span></h2>
+        <p class="sec__desc">四条并行的主线：建造、生存、连接与存储。</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <article class="card card--wide" data-reveal>
+        <div class="card__top">
+          <span class="card__id">PRJ-01</span>
+          <span class="card__badge">主项目</span>
+        </div>
+        <h3 class="card__title">像素上应</h3>
+        <p class="card__en">PIXEL SIT · CAMPUS RESTORATION</p>
+        <p class="card__desc">
+          旨在复原本校各校区真实地形与建筑风貌，以 Minecraft 的方式为广大校友呈现上应风采。
+          工程预计分为三期，目前正在进行第一期 —— 奉贤校区复原计划，已完成一期总进度的 40%。
+        </p>
+        <div class="card__links">
+          <a class="link" href="https://map.sitmc.club" target="_blank" rel="noopener"><span>像素上应卫星图</span><i>↗</i></a>
+        </div>
+        <div class="card__media">
+          <img src="assets/img/campus-3.png" alt="像素上应复原工程的在线地图" />
+        </div>
+      </article>
+
+      <article class="card" data-reveal>
+        <div class="card__top">
+          <span class="card__id">PRJ-02</span>
+          <span class="card__badge">社区</span>
+        </div>
+        <h3 class="card__title">生存世界</h3>
+        <p class="card__en">SURVIVAL WORLD</p>
+        <p class="card__desc">
+          本社建立的多人生存社区，力求为所有 SITer 提供一个乌托邦的像素家园。
+        </p>
+        <div class="card__links">
+          <a class="link" href="https://survival.sitmc.club" target="_blank" rel="noopener"><span>生存服卫星图</span><i>↗</i></a>
+        </div>
+        <div class="card__media card__media--sm">
+          <img src="assets/img/campus-1.png" alt="生存世界中的水域与建筑" />
+        </div>
+      </article>
+
+      <article class="card" data-reveal>
+        <div class="card__top">
+          <span class="card__id">PRJ-03</span>
+          <span class="card__badge">服务</span>
+        </div>
+        <h3 class="card__title">视频会议</h3>
+        <p class="card__en">VIDEO CONFERENCE</p>
+        <p class="card__desc">
+          面向本校的视频会议服务。<strong>无需客户端即可使用</strong>，不限时、免费，
+          单次会议最大 100 人。
+        </p>
+        <ul class="ticks">
+          <li>无需安装客户端</li>
+          <li>不限时长 · 完全免费</li>
+          <li>单次会议最多 100 人</li>
+        </ul>
+      </article>
+
+      <article class="card" data-reveal>
+        <div class="card__top">
+          <span class="card__id">PRJ-04</span>
+          <span class="card__badge">服务</span>
+        </div>
+        <h3 class="card__title">六角恐龙云</h3>
+        <p class="card__en">AXOLOTL CLOUD</p>
+        <p class="card__desc">
+          公益云盘服务，提供免费便捷的文件存储与共享空间，为社团资料与校园创作提供落脚点。
+        </p>
+        <div class="card__links">
+          <a class="link" href="https://cloud.sitmc.club/" target="_blank" rel="noopener"><span>cloud.sitmc.club</span><i>↗</i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 03 像素上应 ══════════════════ -->
+<section class="sec" id="pixelsit">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <span class="sec__no">03</span>
+      <div>
+        <h2 class="sec__title">像素上应<span>PIXEL SIT</span></h2>
+        <p class="sec__desc">上海应用技术大学复原计划。</p>
+      </div>
+    </div>
+
+    <div class="feature" data-reveal>
+      <div class="feature__media">
+        <img src="assets/img/campus-2.png" alt="像素上应奉贤校区复原全景" />
+        <span class="feature__scan" aria-hidden="true"></span>
+      </div>
+      <div class="feature__body">
+        <span class="kicker__tag">恢复工程 · 第一期</span>
+        <h3>把校园搬进方块里</h3>
+        <p>
+          本项目旨在复原本校各校区真实地形与建筑风貌。工程预计分为三期，目前正在进行第一期，
+          即奉贤校区复原计划。项目开始于 2023 年 9 月 5 日，是 SIT-Minecraft 目前主要进行的项目。
+        </p>
+
+        <div class="progress">
+          <div class="progress__head">
+            <span>一期总进度</span>
+            <b>40%</b>
+          </div>
+          <div class="progress__bar"><span style="--p:40%"></span></div>
+          <div class="progress__foot">
+            <span>2023.09.05 启动</span>
+            <span>奉贤校区</span>
+          </div>
+        </div>
+
+        <div class="feature__act">
+          <a class="btn btn--solid" href="https://map.sitmc.club" target="_blank" rel="noopener">打开在线地图</a>
+          <a class="btn btn--ghost" href="https://www.sitmc.club/pixelsit" target="_blank" rel="noopener">项目详情</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery" data-reveal>
+      <figure class="shot shot--map">
+        <img src="assets/img/campus-3.png" alt="像素上应在线卫星地图，标注了各教学楼与宿舍楼" />
+        <figcaption><span class="fig__tag">ONLINE MAP</span>像素上应卫星图 · map.sitmc.club · 已标注校园各建筑</figcaption>
+        <a class="shot__open" href="https://map.sitmc.club" target="_blank" rel="noopener" aria-label="打开像素上应在线地图">↗</a>
+      </figure>
+      <figure class="shot shot--lake">
+        <img src="assets/img/campus-1.png" alt="像素上应复原的校园湖畔与建筑群" />
+        <figcaption><span class="fig__tag">RESTORATION</span>湖畔景观 · 复原预览</figcaption>
+      </figure>
+
+      <aside class="shot shot--note">
+        <div class="note__text">
+          <h4>如何参与复原</h4>
+          <p>像素上应复原工程长期招募建造者。私聊下方成员沟通，或选择面试社团<strong>体素艺术部</strong>。</p>
+        </div>
+        <div class="note__people">
+          <span class="person"><b class="person__av">2H</b><span><b>2H_</b>项目沟通</span></span>
+          <span class="person"><b class="person__av person__av--alt">7</b><span><b>7_han</b>体素部相关戳我</span></span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 04 组织架构 ══════════════════ -->
+<section class="sec sec--alt" id="departments">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <span class="sec__no">04</span>
+      <div>
+        <h2 class="sec__title">组织架构<span>DEPARTMENTS</span></h2>
+        <p class="sec__desc">五个部门，总有一个适合你。</p>
+      </div>
+    </div>
+
+    <div class="depts" id="depts" data-reveal>
+      <div class="depts__list" role="tablist" aria-label="部门列表">
+        <button class="dept-tab" role="tab" aria-selected="true" data-dept="0">
+          <span class="dept-tab__no">DEP-01</span>
+          <span class="dept-tab__name">体素艺术部</span>
+          <span class="dept-tab__en">VOXEL ART</span>
+        </button>
+        <button class="dept-tab" role="tab" aria-selected="false" data-dept="1">
+          <span class="dept-tab__no">DEP-02</span>
+          <span class="dept-tab__name">平台运营部</span>
+          <span class="dept-tab__en">PLATFORM OPS</span>
+        </button>
+        <button class="dept-tab" role="tab" aria-selected="false" data-dept="2">
+          <span class="dept-tab__no">DEP-03</span>
+          <span class="dept-tab__name">宣传创作部</span>
+          <span class="dept-tab__en">MEDIA &amp; CREATIVE</span>
+        </button>
+        <button class="dept-tab" role="tab" aria-selected="false" data-dept="3">
+          <span class="dept-tab__no">DEP-04</span>
+          <span class="dept-tab__name">技术开发部</span>
+          <span class="dept-tab__en">TECH &amp; DEV</span>
+        </button>
+        <button class="dept-tab" role="tab" aria-selected="false" data-dept="4">
+          <span class="dept-tab__no">DEP-05</span>
+          <span class="dept-tab__name">财务管理部</span>
+          <span class="dept-tab__en">FINANCE</span>
+        </button>
+      </div>
+
+      <div class="depts__panels">
+        <article class="dept-panel is-on" role="tabpanel" data-panel="0">
+          <span class="dept-panel__id">DEP-01</span>
+          <h3>体素艺术部</h3>
+          <p class="dept-panel__en">VOXEL ART DEPARTMENT</p>
+          <p>游戏内建筑创作、设计及成果展示。</p>
+          <ul class="ticks">
+            <li>像素上应复原工程的建造主力</li>
+            <li>建筑设计与风格把控</li>
+            <li>作品成果展示与对外呈现</li>
+          </ul>
+          <p class="dept-panel__note">想参与复原工程可以直接面试本部门。</p>
+        </article>
+
+        <article class="dept-panel" role="tabpanel" data-panel="1" hidden>
+          <span class="dept-panel__id">DEP-02</span>
+          <h3>平台运营部</h3>
+          <p class="dept-panel__en">PLATFORM OPERATIONS</p>
+          <p>Minecraft 平台运营、活动策划与组织。</p>
+          <ul class="ticks">
+            <li>服务器日常运营与秩序维护</li>
+            <li>线上线下活动策划与执行</li>
+            <li>玩家社区氛围建设</li>
+          </ul>
+        </article>
+
+        <article class="dept-panel" role="tabpanel" data-panel="2" hidden>
+          <span class="dept-panel__id">DEP-03</span>
+          <h3>宣传创作部</h3>
+          <p class="dept-panel__en">MEDIA &amp; CREATIVE</p>
+          <p>媒体内容创作，维护媒体账号，社团宣传。</p>
+          <ul class="ticks">
+            <li>视频、图文与视觉物料创作</li>
+            <li>B 站 / 抖音等官方账号运营</li>
+            <li>社团对外宣传与形象维护</li>
+          </ul>
+        </article>
+
+        <article class="dept-panel" role="tabpanel" data-panel="3" hidden>
+          <span class="dept-panel__id">DEP-04</span>
+          <h3>技术开发部</h3>
+          <p class="dept-panel__en">TECHNOLOGY &amp; DEVELOPMENT</p>
+          <p>维护平台及服务，技术开发教学、交流。</p>
+          <ul class="ticks">
+            <li>站点、用户中心与游戏面板维护</li>
+            <li>卫星地图与云端服务运维</li>
+            <li>技术分享与开发教学交流</li>
+          </ul>
+        </article>
+
+        <article class="dept-panel" role="tabpanel" data-panel="4" hidden>
+          <span class="dept-panel__id">DEP-05</span>
+          <h3>财务管理部</h3>
+          <p class="dept-panel__en">FINANCE</p>
+          <p>财务核查，对收入、支出进行管理与统计。</p>
+          <ul class="ticks">
+            <li>社团收支记录与核查</li>
+            <li>预算管理与统计报表</li>
+            <li>公益服务成本透明化</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 05 社课体系 ══════════════════ -->
+<section class="sec" id="courses">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <span class="sec__no">05</span>
+      <div>
+        <h2 class="sec__title">社课体系<span>CLUB COURSES</span></h2>
+        <p class="sec__desc">两条轨道，都计入第二课堂三创分。</p>
+      </div>
+    </div>
+
+    <div class="courses">
+      <article class="course" data-reveal>
+        <div class="course__head">
+          <span class="course__tag">内部社课</span>
+          <span class="course__mode">线上 · 视频会议</span>
+        </div>
+        <h3>专业向 · 社团运维</h3>
+        <p>
+          主要讲社团内部运维所需的较为专业的知识，频率约一周一次，以线上视频会议的方式进行。
+          <strong>仅正式社员可参加。</strong>
+        </p>
+        <ul class="course__meta">
+          <li><span>频率</span>约一周一次</li>
+          <li><span>形式</span>线上视频会议</li>
+          <li><span>对象</span>仅正式社员</li>
+        </ul>
+      </article>
+
+      <article class="course" data-reveal>
+        <div class="course__head">
+          <span class="course__tag course__tag--warm">公开社课</span>
+          <span class="course__mode">线下 · 不定期</span>
+        </div>
+        <h3>通俗向 · 人人可听</h3>
+        <p>
+          内容更加通俗有趣，不定期在线下举办。<strong>所有上应大学子都可在 OA 申请参加。</strong>
+        </p>
+        <ul class="course__meta">
+          <li><span>频率</span>不定期</li>
+          <li><span>形式</span>线下面授</li>
+          <li><span>对象</span>全校学生（OA 申请）</li>
+        </ul>
+      </article>
+
+      <aside class="course course--note" data-reveal>
+        <span class="course__tag course__tag--flat">学分认定</span>
+        <h3>第二课堂 · 三创分</h3>
+        <p>内部社课与公开社课<strong>二者参与都会加第二课堂三创分</strong>。</p>
+        <ul class="ticks">
+          <li>内部社课：面向正式社员</li>
+          <li>公开社课：面向全校学生</li>
+          <li>两类社课分别记录参与</li>
+        </ul>
+        <div class="course__stamp">三创分</div>
+      </aside>
+    </div>
+
+    <div class="strip" data-reveal>
+      <div class="strip__item">
+        <span class="strip__k">线下活动</span>
+        <span class="strip__v">公开社课</span>
+      </div>
+      <img class="strip__img" src="assets/img/photo-class.jpg" alt="公开社课现场" />
+      <div class="strip__item">
+        <span class="strip__k">社团日常</span>
+        <span class="strip__v">聚餐与交流</span>
+      </div>
+      <img class="strip__img" src="assets/img/photo-dinner.jpg" alt="社团聚餐合影" />
+      <div class="strip__item">
+        <span class="strip__k">活动彩蛋</span>
+        <span class="strip__v">手工曲奇</span>
+      </div>
+      <img class="strip__img" src="assets/img/photo-cookie.jpg" alt="社团活动手工曲奇" />
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ 06 常见问题 ══════════════════ -->
+<section class="sec sec--alt" id="faq">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <span class="sec__no">06</span>
+      <div>
+        <h2 class="sec__title">常见问题<span>FAQ</span></h2>
+        <p class="sec__desc">观前提示：阅读<a href="https://www.sitmc.club/guide" target="_blank" rel="noopener">游玩指南</a>即可解决大部分问题。</p>
+      </div>
+    </div>
+
+    <div class="faq" data-reveal>
+      <details class="qa">
+        <summary><span class="qa__no">Q1</span>需要正版吗？<i></i></summary>
+        <div class="qa__body">
+          <p><strong>不需要。</strong>我们使用第三方认证登录，具体请阅读游玩指南或看视频教学演示。</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qa__no">Q2</span>不加入社团 / 非本校人员可以玩服务器吗？<i></i></summary>
+        <div class="qa__body">
+          <p>
+            可以，服务器面向所有人开放。如果您不是我校相关人员，可以在 MUA 用户中心
+            （<a href="https://skin.mualliance.ltd" target="_blank" rel="noopener">skin.mualliance.ltd</a>）注册，
+            具体方法请查看 MUA 用户中心提供的引导页面。
+          </p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qa__no">Q3</span>如何参观 / 加入像素上应复原工程？<i></i></summary>
+        <div class="qa__body">
+          <p>私聊 <b>2H_</b> 或 <b>7_han</b> 沟通，或选择面试社团<strong>体素艺术部</strong>。</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qa__no">Q4</span>社课怎么参加？有什么收获？<i></i></summary>
+        <div class="qa__body">
+          <p>
+            内部社课面向正式社员，约一周一次，线上视频会议；公开社课不定期线下举办，所有上应大学子都可在 OA 申请参加。
+            二者参与都会加第二课堂三创分。
+          </p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary><span class="qa__no">Q5</span>皮肤站可以上传自己的皮肤吗？<i></i></summary>
+        <div class="qa__body">
+          <p>
+            可以。皮肤站可以上传自己的皮肤，登录用户中心
+            （<a href="https://skin.sitmc.club" target="_blank" rel="noopener">skin.sitmc.club</a>）即可管理。
+          </p>
+        </div>
+      </details>
+
+      <details class="qa qa--extra">
+        <summary><span class="qa__no">Q6</span>其他问题<i></i></summary>
+        <div class="qa__body">
+          <p>其他问题欢迎直接到官方交流群提问，或者发邮件联系我们。</p>
+          <p class="qa__meme">以及：思道睿会女装吗 —— 这个问题我们真的回答不了（</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════ 07 加入我们 + 结束语（深色收束区块） ══════════════════ -->
+<div class="finale">
+<section class="sec sec--join" id="join">
+  <div class="wrap">
+    <div class="sec__head" data-reveal>
+      <span class="sec__no">07</span>
+      <div>
+        <h2 class="sec__title">加入我们<span>JOIN US</span></h2>
+        <p class="sec__desc">加入我们谢谢喵。</p>
+      </div>
+    </div>
+
+    <div class="join">
+      <div class="join__main" data-reveal>
+        <div class="join__qr">
+          <figure>
+            <img src="assets/img/qr-qq.png" alt="官方 QQ 群二维码，群号 623697015" />
+            <figcaption>QQ 群 · 623697015</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/qr-bilibili.png" alt="B 站账号二维码，上应大 Minecraft 社" />
+            <figcaption>B 站 · 上应大Minecraft社</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/qr-douyin.png" alt="抖音账号二维码，上海应用技术大学 Minecraft 社" />
+            <figcaption>抖音 · SITMinecraft</figcaption>
+          </figure>
+        </div>
+
+        <div class="join__act">
+          <a class="btn btn--solid btn--lg" href="https://qm.qq.com/q/YTb3tqvyYE" target="_blank" rel="noopener">加入官方交流群</a>
+          <a class="btn btn--ghost btn--lg" href="https://www.sitmc.club/guide" target="_blank" rel="noopener">阅读游玩指南</a>
+        </div>
+
+        <div class="socials">
+          <a class="social" href="https://space.bilibili.com/9888184" target="_blank" rel="noopener">
+            <span class="social__k">BILIBILI</span><span class="social__v">上应大Minecraft社</span>
+          </a>
+          <a class="social" href="https://v.douyin.com/Yd84UYBOnes/" target="_blank" rel="noopener">
+            <span class="social__k">DOUYIN</span><span class="social__v">上海应用技术大学Minecraft社</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="join__side" data-reveal>
+        <div class="contact">
+          <div class="contact__row">
+            <span class="contact__k">官方网站</span>
+            <a href="https://www.sitmc.club" target="_blank" rel="noopener">sitmc.club</a>
+          </div>
+          <div class="contact__row">
+            <span class="contact__k">官方 QQ 群</span>
+            <a href="https://qm.qq.com/q/YTb3tqvyYE" target="_blank" rel="noopener">623697015</a>
+          </div>
+          <div class="contact__row">
+            <span class="contact__k">联系我们</span>
+            <a href="mailto:contact@sitmc.club">contact@sitmc.club</a>
+          </div>
+          <div class="contact__row">
+            <span class="contact__k">用户中心</span>
+            <a href="https://skin.sitmc.club" target="_blank" rel="noopener">skin.sitmc.club</a>
+          </div>
+          <div class="contact__row">
+            <span class="contact__k">资源下载</span>
+            <a href="https://www.sitmc.club/download" target="_blank" rel="noopener">sitmc.club/download</a>
+          </div>
+          <div class="contact__row">
+            <span class="contact__k">游玩指南</span>
+            <a href="https://www.sitmc.club/guide" target="_blank" rel="noopener">sitmc.club/guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ COLOPHON ══════════════════ -->
+<section class="colophon" aria-label="结束语">
+  <img class="colophon__mark" src="assets/img/pixel.gif" alt="" aria-hidden="true" />
+  <div class="wrap">
+    <div class="kicker kicker--c">
+      <span class="kicker__line"></span>
+      <span class="kicker__txt">END OF FILE / SIT-MINECRAFT</span>
+      <span class="kicker__line"></span>
+    </div>
+    <h2>用方块筑梦，用创造改变世界</h2>
+    <p>上海应用技术大学 Minecraft 六角恐龙社 · 欢迎每一位上应人加入</p>
+    <dl class="colophon__meta">
+      <div><dt>ESTABLISHED</dt><dd>2025.03.13</dd></div>
+      <div><dt>FACULTY</dt><dd>智能技术学部</dd></div>
+      <div><dt>MEMBERS</dt><dd>近千人</dd></div>
+      <div><dt>ARCHIVE</dt><dd>SIT-MC / 2026</dd></div>
+    </dl>
+  </div>
+</section>
+</div><!-- /.finale -->
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="foot">
+  <div class="wrap foot__wrap">
+    <div class="foot__brand">
+      <img src="assets/img/logo.png" alt="" width="56" height="56" />
+      <div>
+        <strong>上海应用技术大学六角恐龙社</strong>
+        <span>SIT-MINECRAFT · EST. 2025.03.13</span>
+      </div>
+    </div>
+
+    <nav class="foot__links" aria-label="友情链接">
+      <div class="foot__col">
+        <h4>站内</h4>
+        <a href="#about">社团简介</a>
+        <a href="#projects">社团项目</a>
+        <a href="#departments">组织架构</a>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div class="foot__col">
+        <h4>服务</h4>
+        <a href="https://map.sitmc.club" target="_blank" rel="noopener">像素上应地图</a>
+        <a href="https://survival.sitmc.club" target="_blank" rel="noopener">生存服地图</a>
+        <a href="https://skin.sitmc.club" target="_blank" rel="noopener">用户中心</a>
+        <a href="https://cloud.sitmc.club/" target="_blank" rel="noopener">六角恐龙云</a>
+      </div>
+      <div class="foot__col">
+        <h4>友情链接</h4>
+        <a href="https://www.sit.edu.cn" target="_blank" rel="noopener">上海应用技术大学</a>
+        <a href="https://www.mualliance.cn/" target="_blank" rel="noopener">Minecraft 高校联盟</a>
+        <a href="https://www.mczju.com/" target="_blank" rel="noopener">浙江大学 Minecraft 社</a>
+        <a href="https://www.tongji-mc.cn/" target="_blank" rel="noopener">同济大学 Minecraft 社</a>
+      </div>
+      <div class="foot__col">
+        <h4>更多友链</h4>
+        <a href="https://ysumc.net/" target="_blank" rel="noopener">燕山大学 Minecraft 社</a>
+        <a href="https://www.swustmc.cn/" target="_blank" rel="noopener">西南科技大学 Minecraft 社</a>
+        <a href="https://cop.cooo.site/" target="_blank" rel="noopener">西安邮电大学邮立方</a>
+        <a href="https://www.sitmc.club/privacy" target="_blank" rel="noopener">隐私政策</a>
+      </div>
+    </nav>
+
+    <div class="foot__legal">
+      <p>上海应用技术大学 Minecraft 六角恐龙社 版权所有 · Copyright 2023–2026 SIT-Minecraft · All rights reserved.</p>
+      <p>
+        <a href="http://beian.miit.gov.cn" target="_blank" rel="noopener">沪ICP备2022011717号-2</a>
+        · 「Minecraft」以及「我的世界」为美国微软公司的商标，本站与微软公司没有从属关系。
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- 侧边章节刻度 -->
+<div class="rail" id="rail" aria-hidden="true">
+  <span class="rail__fill"></span>
+  <a href="#hero" data-target="hero"><i></i><em>000 首页</em></a>
+  <a href="#about" data-target="about"><i></i><em>01 社团简介</em></a>
+  <a href="#projects" data-target="projects"><i></i><em>02 社团项目</em></a>
+  <a href="#pixelsit" data-target="pixelsit"><i></i><em>03 像素上应</em></a>
+  <a href="#departments" data-target="departments"><i></i><em>04 组织架构</em></a>
+  <a href="#courses" data-target="courses"><i></i><em>05 社课体系</em></a>
+  <a href="#faq" data-target="faq"><i></i><em>06 常见问题</em></a>
+  <a href="#join" data-target="join"><i></i><em>07 加入我们</em></a>
+</div>
+
+<button class="totop" id="totop" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

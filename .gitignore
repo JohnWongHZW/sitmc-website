@@ -1,0 +1,13 @@
+# ── 原始素材（不随站点发布）──
+# 社团介绍 PPT 源文件，内容已提取进页面
+*.pptx
+
+# ── 工作与构建产物 ──
+_extract/
+node_modules/
+*.log
+
+# ── 系统文件 ──
+Thumbs.db
+Desktop.ini
+.DS_Store
